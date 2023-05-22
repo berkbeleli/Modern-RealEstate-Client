@@ -36,7 +36,7 @@ const Footer = ({ spacing }) => {
         <StyledFlexWrapper gridArea="copyright">
           <p>
             &copy; {new Date().getFullYear()} Moderne Real-Estate - All rights
-            reserved.
+            reserved - Berk Beleli.
           </p>
           <StyledScrollButton onClick={toTop}>Go Top</StyledScrollButton>
         </StyledFlexWrapper>
