@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query';
 
 async function fetchPropertiesImages() {
-  const response = await fetch('https://modern-realestate-api.onrender.com/api/properties/images');
+  const response = await fetch(`${import.meta.env.VITE_IMAGES_KEY}`);
   return response.json();
 }
 

@@ -2,7 +2,8 @@ import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 
 async function fetchSinglePropertie(id) {
-  const response = await fetch(`https://modern-realestate-api.onrender.com/api/properties/${id}`);
+  const url = `${import.meta.env.VITE_SINGLE_KEY}`;
+  const response = await fetch(`${url}${id}`);
   return response.json();
 }
 
